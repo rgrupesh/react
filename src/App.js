@@ -1,4 +1,4 @@
-const Pet = () => {
+const Cat = () => {
     return React.createElement(
         "div",
         {},
@@ -8,13 +8,22 @@ const Pet = () => {
         );
 };
 
+const Dog = () => {
+    return React.createElement(
+        "div",
+        {},
+        React.createElement("h2",{}, "Husky"),
+        React.createElement("h2",{}, "Foxy"),
+    );
+};
+
 const App = () => {
     return React.createElement(
         "div",
         {},
         React.createElement("h1",{},"Adopt Me"),
-        React.createElement(Pet),
-        React.createElement(Pet)
+        React.createElement(Cat),
+        React.createElement(Dog)
     );
 };
 
